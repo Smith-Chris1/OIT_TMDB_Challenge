@@ -14,6 +14,7 @@ I used a windows device so all my paths are \\, I'm not sure if you'll need to c
 I set the api_key in a .env file in the webservice folder. I didn't upload that to github as its not a wise move to put an apikey in a public repo. The structure of the file is: ```api_key=YOURAPIKEY```
 
 # Installation
+I have set github to ignore the node_modules directory, so you will need to install all the dependancies for the webapp and the webservice.
 Download the zip and unxip the files to a directory.
 navigate to the webservice directory and type ```npm install```
 navigate to the webapp directory and type ```npm install```
