@@ -16,8 +16,8 @@ I set the api_key in a .env file in the webservice folder. I didn't upload that 
 # Installation
 I have set github to ignore the node_modules directory, so you will need to install all the dependancies for the webapp and the webservice.
 Download the zip and unxip the files to a directory.
-navigate to the webservice directory and type ```npm install```
-navigate to the webapp directory and type ```npm install```
+navigate to the webservice directory and type ```npm i```
+navigate to the webapp directory and type ```npm ci```
 
 # Running
 To run this outside of VSCode:
@@ -36,4 +36,5 @@ If you're using VSCode, I have included a launch profile.
 Open a new window in VSCode, open the directory containing the project, Navigate to the Run and Debug area in VSCode and select the 'webservice/webapp' profile.
 
 # Followup
-Although I wasn't able to complete the challenge I hope to hear from you about this position.
+Although I wasn't able to complete the challenge I hope to hear from you about this position. 
+I also want to state that the 4 hour time limit was respected, I stopped coding at 4 hours, but then spend another 45 minutes uploading to github and testing my instructions for you
