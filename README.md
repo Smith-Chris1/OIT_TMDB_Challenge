@@ -1,10 +1,10 @@
 # OIT_TMDB_Challenge
 
 # Challenges
-Webservice
+## Webservice
 Lets get the challenges out of the way. I have used nodejs in the past quite a lot. I have not used nodejs as an API server before, however it was relativly easy to setup and troubleshoot with postman. I was able to able to filter the response to the max of 10 and reformat it to the spec in the documentation. I would have liked to spend more time here filtering by populatiry or other fields that could provide a better user experience.
 
-Webapp
+## Webapp
 I have never used Vue or React before, and 4 hours to learn it wasn't enough for me. That said, I find how fast and fluid Vue and Nuxt are to be benefitial and I see why I would want to use this in the future. I have used Svelte a lot and the way you pass data from child to parent or vice-versa seems different, but that could be my quick reading of the documentation. 
 
 While I was able to create a component that accepts an input string for the movie title and calls the backend API which successfully returns a response, I was unable to pass the response to another component to create the view in the client. The response does print to the console.log in the browser.
