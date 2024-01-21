@@ -38,3 +38,4 @@ Open a new window in VSCode, open the directory containing the project, Navigate
 # Followup
 Although I wasn't able to complete the challenge I hope to hear from you about this position. 
 I also want to state that the 4 hour time limit was respected, I stopped coding at 4 hours, but then spend another 45 minutes uploading to github and testing my instructions for you
+**I know I won't be "graded" on this, but I was very close to completion and wanted to complete it as a MVP for myself. I have created a finished branch with it working as described in your document.
