@@ -44,6 +44,18 @@ fetch(tmdbURL, options)
     //build a response object
     console.log(tmdbJson)
     let responseJson = []
+    if (tmdbJson.total_results < 10) {
+      tmdbJson.results.forEach(movie => {
+        //calculate the popularity summary
+            popularity_summary = Math.round(movie.vote_count*(movie.popularity/100))
+            responseJson.push({
+                'movie_id':movie.id,
+                'title':movie.title,
+                'poster_image_url':`https://image.tmdb.org/t/p/original/${movie.poster_path}`,
+                'popularity_summary':`${popularity_summary} out of ${movie.vote_count}`})
+
+        });
+    } else {
     while (responseJson.length < 10) {
     tmdbJson.results.slice(0, 10).forEach(movie => {
         //calculate the popularity summary
@@ -52,10 +64,11 @@ fetch(tmdbURL, options)
                 'movie_id':movie.id,
                 'title':movie.title,
                 'poster_image_url':`https://image.tmdb.org/t/p/original/${movie.poster_path}`,
-                'populatiry':`${popularity_summary} out of ${movie.vote_count}`})
+                'popularity_summary':`${popularity_summary} out of ${movie.vote_count}`})
 
         });
     }
+  }
     //send the response to the frontend
     response.send(responseJson)
   })
